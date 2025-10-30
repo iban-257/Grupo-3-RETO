@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | DONOSWAVE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="logo">
+      <img src="imagenes/logo_naranja.png" alt="Logo DONOSWAVE">
+    </div>
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="productos.html">PRODUCTOS</a>
+      <a href="contacto.html" class="activo">CONTACTO</a>
+      <a href="#">REGÍSTRATE</a>
+      <a href="#">INICIA SESIÓN</a>
+    </nav>
+  </header>
+
+  <main class="contacto-main">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna pregunta o sugerencia? Rellena el formulario y te responderemos lo antes posible.</p>
+
+    <form class="form-contacto" action="#" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>DONOSWAVE</h3>
+        <p>Tu plataforma de confianza para eventos y entradas en Donostia-San Sebastián.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>· E-mail: info@donoswave.com</p>
+        <p>· Tlf: +34 943 123 456</p>
+        <p>· Localidad: Donostia-San Sebastián, España</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 DONOSWAVE. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

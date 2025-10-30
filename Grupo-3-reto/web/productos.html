@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | DONOSWAVE</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <div class="logo">
+            <img src="imagenes/logo_naranja.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="productos.html" class="activo">PRODUCTOS</a>
+            <a href="contacto.html">CONTACTANOS</a>
+            <a href="#">REGISTRATE</a>
+            <a href="#">INICIA SESIÓN</a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido-principal">
+        <section class="productos">
+            <h2>Nuestros Eventos Destacados</h2>
+            <p>Elige entre los mejores eventos y consigue tus entradas antes de que se agoten.</p>
+
+            <div class="grid-productos">
+
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img class="imagen-jazzaldi" src="imagenes/jazzaldia.jpg" alt="Jazzaldia">
+                    <h3>Concierto en Donostia</h3>
+                    <p>Vive una noche inolvidable con los mejores artistas locales e internacionales en la Zurriola.</p>
+                    <span class="precio">25€</span>
+                    <button class="btn">Comprar Entrada</button>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img class="imagen-gastronomica" src="imagenes/gastronomia.jpg" alt="Festival Gastronomico">
+                    <h3>Festival Gastronomico</h3>
+                    <p>Festival Gastronomico participando en el los mejores cocineros del país. ¡No te lo pierdas!</p>
+                    <span class="precio">60€</span>
+                    <button class="btn">Comprar Entrada</button>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img class="imagen-cine" src="imagenes/cine.jpg" alt="Festival De Cine">
+                    <h3>Cinemaldia</h3>
+                    <p>Entrega de premios y exposición de peliculas que nunca antes has visto.</p>
+                    <span class="precio">18€</span>
+                    <button class="btn">Comprar Entrada</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DONOSWAVE</h3>
+                <p>· Tu plataforma de confianza para eventos y entradas en Donostia-San Sebastián.</p>
+            </div>
+        
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>· E-mail: Info@donoswave.com</p>
+                <p>· Tlf: +34 943 123 456</p>
+                <p>· Localidad: Donostia-San Sebastián, España</p>
+            </div>
+            
+            <div class="mapa-section">
+                <h3>Dónde estamos situados</h3>
+                <button id="mostrarMapa" class="btn">Ver mapa</button>
+
+                <div id="map" style="display: none;"></div>
+                <br>
+                <a href="https://maps.app.goo.gl/iR4Lowr8q8D9dkv7A" target="_blank"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DONOSWAVE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="mapa.js"></script>
+</body>
+</html>
